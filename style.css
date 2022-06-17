@@ -11,11 +11,17 @@ body {
     background-color: #FF7978;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
+    /*property below was set for ide-specific issues, nothing serious*/
+    margin-bottom: 500px;
 }
 
 .page-wrapper {
     width: 75%;
     margin: 0 auto 0 auto;
+}
+
+input {
+    display: block;
 }
 
 .showcase {
@@ -39,7 +45,7 @@ body {
     background-color: #5D54A3;
     border-radius: 12px;
     color: #FCFFFD;
-    padding: 28px;
+    padding: 23px;
     box-shadow: 0 9px 2px rgba(21, 25, 23, 0.2);
     margin-top: 10px;
     margin-bottom: 25px;
@@ -51,4 +57,72 @@ body {
 
 .subscription .bold-text {
     font-weight: 700;
+}
+
+form {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin-bottom: 60px;
+    box-shadow: 0 9px 2px rgba(21, 25, 23, 0.2);
+
+}
+
+form .container {
+    width: 80%;
+    height: 100%;
+    border: 1px solid #FFFFFF;
+    margin: 0 auto 0 auto;
+}
+
+.input-fields input,
+.button-field button{
+    padding: 15px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.input-fields input{
+    border: 2px solid #ccc;
+}
+
+.input-fields input:focus {
+    outline-color: hsl(248, 32%, 49%);
+}
+
+#fname {
+    margin-top: 30px;
+}
+
+.button-field button {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #FCFFFD;
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    box-shadow: 0 5px 2px #40B080;
+    cursor: pointer;
+}
+
+.t-and-s {
+    margin: 10px auto 25px auto;
+}
+
+.t-and-s p{
+    font-size: 13px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.t-and-s .light-text {
+    color: #cccccc;
+}
+
+.t-and-s .bold-red {
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+    font-size: 13px;
 }

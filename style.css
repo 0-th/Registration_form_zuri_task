@@ -11,8 +11,6 @@ body {
     background-color: #FF7978;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
-    /*property below was set for ide-specific issues, nothing serious*/
-    margin-bottom: 500px;
 }
 
 .page-wrapper {
@@ -90,7 +88,8 @@ form .container {
 }
 
 .input-fields input:focus {
-    outline-color: hsl(248, 32%, 49%);
+    outline: 2px solid hsl(248, 32%, 49%);
+    border: none;
 }
 
 #fname {
@@ -125,4 +124,35 @@ form .container {
     color: hsl(0, 100%, 74%);
     font-weight: 700;
     font-size: 13px;
+}
+
+@media screen and (min-width: 768px) {
+    .page-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 70px;
+    }
+
+    .text-wrapper {
+        align-self: center;
+    }
+
+    .form-wrapper {
+        margin-top: 40px;
+        align-self: center;
+    }
+
+    form {
+        margin-bottom: 0;
+    }
+
+    .showcase-header {
+        font-size: xxx-large;
+        text-align: start;
+        margin-bottom: 20px;
+    }
+
+    .showcase-text {
+        text-align: start;
+    }
 }
